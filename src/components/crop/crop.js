@@ -5,7 +5,7 @@ import { drawImageOnCanvas } from './utils';
 import { useAppSelector } from "@/lib/hooks";
 
 export default function App() {
-  const [imgSrc, setImgSrc] = useState(null);  // Initially null to prevent cropping until an image is selected
+  const [imgSrc, setImgSrc] = useState(null); 
   const [crop, setCrop] = useState({});
   const [completedCrop, setCompletedCrop] = useState(null);
   const userState = useAppSelector((state) => state.userReducer.userInfo);
