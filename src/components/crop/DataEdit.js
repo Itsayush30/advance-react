@@ -566,11 +566,11 @@ const DataEdit = ({ product, setProduct, originalProduct, categories, setCategor
                                 <div>
                                     <div className='my-5 relative'>
                                         <label className='text-xl'>Variants</label>
-                                        <input className='block mt-2 h-8 w-[450px] rounded border-solid border-gray-400 border-[0.5px]' />
+                                        <input className='block mt-2 h-8 rounded border-solid border-gray-400 border-[0.5px]' />
                                     </div>
                                     <div className='my-5'>
                                         <label className='text-xl'>Product Name</label>
-                                        <input className='block mt-2 h-8 w-[450px] rounded border-solid border-gray-400 border-[0.5px]' />
+                                        <input className='block mt-2 h-8  rounded border-solid border-gray-400 border-[0.5px]' />
                                     </div>
                                     <div>
                                         <label className='text-xl'>Description</label>
@@ -631,9 +631,9 @@ const DataEdit = ({ product, setProduct, originalProduct, categories, setCategor
                 let newProduct = { ...product };
                 type_1 ? newProduct?.vars[Object.keys(newProduct?.vars)[0]].push({ attrs: { [Object.keys(newProduct?.vars)[0]]: `new variation ${Date.now()}` } }) : newProduct?.vars[Object.keys(newProduct?.vars)[1]].push({ attrs: { [Object.keys(newProduct?.vars)[0]]: `new variation ${Date.now()}` } })
                 setProduct({ ...newProduct });
-            }} className='bg-orange-600 w-48 mx-8 h-14 text-2xl py-3 rounded px-2 text-white font-serif cursor-pointer'>+ Add Varations</button>
+            }} className='bg-orange-600 w-48 h-14 text-2xl py-3 rounded px-2 text-white font-serif cursor-pointer'>+ Add Varations</button>
             <div className='flex justify-end'>
-                <div className='bg-amber-950 w-48 mx-8 h-14 text-2xl py-3 rounded px-6 text-white font-serif cursor-pointer'>Save As Draft</div>
+                <div className='bg-amber-950 mx-8 h-14 text-2xl py-3 rounded px-6 text-white font-serif cursor-pointer'>Save As Draft</div>
                 <div onClick={async (e) => await submitEditedProduct()} className='bg-orange-600 w-48 mx-8 h-14 text-2xl py-3 rounded px-14 text-white font-serif cursor-pointer'>Submit</div>
             </div>
             <button className='bg-orange-600 w-48 mx-8 h-14 text-2xl py-3 rounded px-2 text-white font-serif cursor-pointer'>+ Add Varations</button>
