@@ -446,7 +446,7 @@ const DataEdit = ({ product, setProduct, originalProduct, categories, setCategor
                                             let newProduct = { ...product };
                                             newProduct.vars[variationName][index].price = parseInt(e.target.value);
                                             setProduct({ ...newProduct })
-                                        }} className='block mt-2 h-8 w-[450px] rounded border-solid border-gray-400 border-[0.5px]' />
+                                        }} className='block mt-2 h-8 rounded border-solid border-gray-400 border-[0.5px]' />
                                     </div>
                                 </div>
                                 <div>
@@ -488,7 +488,7 @@ const DataEdit = ({ product, setProduct, originalProduct, categories, setCategor
                                             let newProduct = { ...product };
                                             newProduct.vars[variationName][index].discounted_price = parseInt(e.target.value);
                                             setProduct({ ...newProduct })
-                                        }} className='block mt-2 h-8 w-[450px] rounded border-solid border-gray-400 border-[0.5px]' />
+                                        }} className='block mt-2 h-8 rounded border-solid border-gray-400 border-[0.5px]' />
                                     </div>
                                     <div className='my-5'>
                                         <label className='text-xl'>Product discounted percentage</label>
