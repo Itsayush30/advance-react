@@ -198,7 +198,7 @@ const DataEdit = ({ product, setProduct, originalProduct, categories, setCategor
                             </div>
 
                             <div className="flex justify-center items-center gap-1 mt-2 h-auto w-full p-2  rounded">
-                                <input value={newProductSpecification?.key} onChange={e => setNewProductSpecification({ ...newProductSpecification, key: e.target.value })} className="block bg-[#EDF6FF] mt-2 h-8 w-full border-solid border-gray-400 border-[0.5px] p-1 rounded" />
+                                <input value={newProductSpecification?.key} onChange={e => setNewProductSpecification({ ...newProductSpecification, key: e.target.value })} className="block bg-[#EDF6FF] mt-2 h-8 w-full border-solid border-gray-400  p-1 rounded" />
                                 <input value={newProductSpecification?.value} onChange={e => setNewProductSpecification({ ...newProductSpecification, value: e.target.value })} className="block bg-[#EDF6FF] mt-2 h-8 w-full border-solid border-gray-400 border-[0.5px] p-1 rounded" />
                                 <div type='button' onClick={e => { setProduct({ ...product, desc: { ...product?.desc, [newProductSpecification?.key]: newProductSpecification?.value } }); setNewProductSpecification({ key: "", value: "" }) }} className="bg-orange-600 text-white py-2 px-4 mt-2 border-none rounded cursor-pointer transition duration-300 ease-in-out hover:bg-orange-500">Add</div>
                             </div>
@@ -297,7 +297,7 @@ const DataEdit = ({ product, setProduct, originalProduct, categories, setCategor
                                         </div>
                                     ))}
                                     <input
-                                        className='outline-none h-8 w-full'
+                                        className='outline-none w-full'
                                         type='text'
                                         value={inputValue}
                                         onChange={(e) => setInputValue(e.target.value)}
@@ -322,7 +322,7 @@ const DataEdit = ({ product, setProduct, originalProduct, categories, setCategor
             </div>
 
             {product?.attrs?.imgs && <>
-                <div className='shadow-lg mx-8 flex'>
+                <div className='shadow-lg flex'>
                     <DragDropContext onDragEnd={handleImagesDragEnd}>
                         <Droppable droppableId="categories" direction="horizontal">
                             {(droppableProvider) => (
