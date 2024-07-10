@@ -1,10 +1,4 @@
-/**
- *  Function to download image drawn on canvas
- *
- * @param {HTMLCanvasElement} canvas
- * @param {import('react-image-crop').PixelCrop} crop
- * @returns void
- */
+
 export function generateDownload(canvas, crop) {
     if (!crop || !canvas) {
       return;
@@ -26,13 +20,7 @@ export function generateDownload(canvas, crop) {
     );
   }
   
-  /**
-   * Function to draw cropped image on canvas
-   * @param {HTMLImageElement} image
-   * @param {HTMLCanvasElement} canvas
-   * @param {import('react-image-crop').PixelCrop} crop
-   * @returns void
-   */
+
   export function drawImageOnCanvas(image, canvas, crop) {
     if (!crop || !canvas || !image) {
       return;
